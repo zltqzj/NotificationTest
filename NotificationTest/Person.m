@@ -17,6 +17,8 @@
 {
     [super dealloc];
     [_name release];
+    [self removeObserver:self forKeyPath:@"name"];
+    [self removeObserver:self forKeyPath:@"age"];
 }
 
 
@@ -27,12 +29,27 @@
         _name = [newName retain];
         _age = newAge;
       
+        //添加监听者
+        [self addObserver:self forKeyPath:@"name" options:NSKeyValueObservingOptionNew context:@"abc"];
+        [self addObserver:self forKeyPath:@"age" options:NSKeyValueObservingOptionOld context:nil];
+        
     }
     return self;
 }
 
+
+
 -(NSString *)description{
     return [NSString stringWithFormat:@"name:%@,age:%d",self.name,self.age];
     //    return [NSString stringWithFormat:@"name:%@,age:%d",_name,_age];
+}
+
+
+//实现监听方法
+//该方法在值被修改后自动调用
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context{
+    
+    NSLog(@"keypath = %@,object = %@,change = %@,context = %@",keyPath,object,change,context);
+    
 }
 @end

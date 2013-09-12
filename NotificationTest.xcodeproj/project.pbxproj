@@ -14,6 +14,8 @@
 		C45EDC3817E199D200173ACE /* Student.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EDC3717E199D200173ACE /* Student.m */; };
 		C45EDC3B17E19BC000173ACE /* Saler.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EDC3A17E19BC000173ACE /* Saler.m */; };
 		C45EDC3E17E1A08000173ACE /* Nurse.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EDC3D17E1A08000173ACE /* Nurse.m */; };
+		C45EDC4117E1A89900173ACE /* MyClass.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EDC4017E1A89900173ACE /* MyClass.m */; };
+		C45EDC4617E1BFB400173ACE /* Hero.m in Sources */ = {isa = PBXBuildFile; fileRef = C45EDC4517E1BFB400173ACE /* Hero.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +45,10 @@
 		C45EDC3A17E19BC000173ACE /* Saler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Saler.m; sourceTree = "<group>"; };
 		C45EDC3C17E1A08000173ACE /* Nurse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Nurse.h; sourceTree = "<group>"; };
 		C45EDC3D17E1A08000173ACE /* Nurse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Nurse.m; sourceTree = "<group>"; };
+		C45EDC3F17E1A89900173ACE /* MyClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyClass.h; sourceTree = "<group>"; };
+		C45EDC4017E1A89900173ACE /* MyClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyClass.m; sourceTree = "<group>"; };
+		C45EDC4417E1BFB400173ACE /* Hero.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hero.h; sourceTree = "<group>"; };
+		C45EDC4517E1BFB400173ACE /* Hero.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Hero.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,17 +91,11 @@
 		C45EDC2717E1991900173ACE /* NotificationTest */ = {
 			isa = PBXGroup;
 			children = (
+				C45EDC4317E1BF9700173ACE /* KVC&&KVO */,
+				C45EDC4217E1BF8800173ACE /* notification */,
 				C45EDC2817E1991900173ACE /* main.m */,
 				C45EDC2C17E1991900173ACE /* NotificationTest.1 */,
 				C45EDC2A17E1991900173ACE /* Supporting Files */,
-				C45EDC3317E1994D00173ACE /* Person.h */,
-				C45EDC3417E1994D00173ACE /* Person.m */,
-				C45EDC3617E199D200173ACE /* Student.h */,
-				C45EDC3717E199D200173ACE /* Student.m */,
-				C45EDC3917E19BC000173ACE /* Saler.h */,
-				C45EDC3A17E19BC000173ACE /* Saler.m */,
-				C45EDC3C17E1A08000173ACE /* Nurse.h */,
-				C45EDC3D17E1A08000173ACE /* Nurse.m */,
 			);
 			path = NotificationTest;
 			sourceTree = "<group>";
@@ -106,6 +106,32 @@
 				C45EDC2B17E1991900173ACE /* NotificationTest-Prefix.pch */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C45EDC4217E1BF8800173ACE /* notification */ = {
+			isa = PBXGroup;
+			children = (
+				C45EDC3C17E1A08000173ACE /* Nurse.h */,
+				C45EDC3D17E1A08000173ACE /* Nurse.m */,
+				C45EDC4417E1BFB400173ACE /* Hero.h */,
+				C45EDC4517E1BFB400173ACE /* Hero.m */,
+			);
+			name = notification;
+			sourceTree = "<group>";
+		};
+		C45EDC4317E1BF9700173ACE /* KVC&&KVO */ = {
+			isa = PBXGroup;
+			children = (
+				C45EDC3317E1994D00173ACE /* Person.h */,
+				C45EDC3417E1994D00173ACE /* Person.m */,
+				C45EDC3617E199D200173ACE /* Student.h */,
+				C45EDC3717E199D200173ACE /* Student.m */,
+				C45EDC3917E19BC000173ACE /* Saler.h */,
+				C45EDC3A17E19BC000173ACE /* Saler.m */,
+				C45EDC3F17E1A89900173ACE /* MyClass.h */,
+				C45EDC4017E1A89900173ACE /* MyClass.m */,
+			);
+			name = "KVC&&KVO";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +190,8 @@
 				C45EDC3817E199D200173ACE /* Student.m in Sources */,
 				C45EDC3B17E19BC000173ACE /* Saler.m in Sources */,
 				C45EDC3E17E1A08000173ACE /* Nurse.m in Sources */,
+				C45EDC4117E1A89900173ACE /* MyClass.m in Sources */,
+				C45EDC4617E1BFB400173ACE /* Hero.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -264,6 +292,7 @@
 				C45EDC3217E1991900173ACE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
